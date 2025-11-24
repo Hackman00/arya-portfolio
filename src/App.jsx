@@ -406,161 +406,188 @@ function App() {
       </section>
 
       <section id="projects">
-        <h2 className="section-header">Selected Work</h2>
-        <p className="section-caption">
-          From concept to deployment—building solutions that matter
+  <h2 className="section-header">Selected Work</h2>
+  <p className="section-caption">
+    From concept to deployment—building solutions that matter
+  </p>
+
+  <div className="projects-container">
+    {/* ========================= PROJECT 01 ========================= */}
+    <div className="project-card">
+      <div>
+        <div className="project-number">01</div>
+        <h3 className="project-title">AidTrack</h3>
+        <div className="project-subtitle">
+          Disaster Relief Coordination System
+        </div>
+        <p className="project-description">
+          Real-time logistics platform designed for NGOs responding to humanitarian
+          crises. Streamlines resource allocation, volunteer coordination, and supply
+          chain tracking during critical disaster response operations.
         </p>
+        <div className="tech-stack">
+          <span className="tech-item">React.js</span>
+          <span className="tech-item">Node.js</span>
+          <span className="tech-item">Express.js</span>
+          <span className="tech-item">MongoDB</span>
+          <span className="tech-item">REST APIs</span>
+        </div>
+      </div>
+      <div className="glass-card">
+        <h4 className="card-title">Impact</h4>
+        <ul className="card-text">
+          <li>Real-time tracking of supplies and personnel</li>
+          <li>Centralized operations management dashboard</li>
+          <li>Scalable multi-region architecture</li>
+          <li>Mobile-responsive interface for field teams</li>
+        </ul>
+      </div>
+    </div>
 
-        <div className="projects-container">
-          <div className="project-card">
-            <div>
-              <div className="project-number">01</div>
-              <h3 className="project-title">AidTrack</h3>
-              <div className="project-subtitle">
-                Disaster Relief Coordination System
-              </div>
-              <p className="project-description">
-                Real-time logistics platform designed for NGOs responding to
-                humanitarian crises. Streamlines resource allocation, volunteer
-                coordination, and supply chain tracking during critical disaster
-                response operations.
-              </p>
-              <div className="tech-stack">
-                <span className="tech-item">React.js</span>
-                <span className="tech-item">Node.js</span>
-                <span className="tech-item">Express.js</span>
-                <span className="tech-item">MongoDB</span>
-                <span className="tech-item">REST APIs</span>
-              </div>
-            </div>
-            <div className="glass-card">
-              <h4 className="card-title">Impact</h4>
-              <ul className="card-text">
-                <li>Real-time tracking of supplies and personnel</li>
-                <li>Centralized operations management dashboard</li>
-                <li>Scalable multi-region architecture</li>
-                <li>Mobile-responsive interface for field teams</li>
-              </ul>
-            </div>
+    {/* ========================= PROJECT 02 — TRANSPARENT VOTING SYSTEM ========================= */}
+    <a
+      href="https://transparent-voting-system.vercel.app"
+      target="_blank"
+      rel="noreferrer"
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
+      <div className="project-card">
+        <div className="glass-card">
+          <h4 className="card-title">Key Features</h4>
+          <ul className="card-text">
+            <li>Create polls with dynamic options</li>
+            <li>Instant vote updates with animated result bars</li>
+            <li>Backend API built with Node.js & Express</li>
+            <li>Clean glassmorphism UI, fully responsive</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="project-number">02</div>
+          <h3 className="project-title">Transparent Voting System</h3>
+          <div className="project-subtitle">Real-time Voting Dashboard</div>
+          <p className="project-description">
+            Full-stack voting platform where users can create polls, cast votes,
+            and watch results update instantly. Built with a modern React frontend,
+            REST API backend, and animated glassmorphism UI.
+          </p>
+
+          <div className="tech-stack">
+            <span className="tech-item">React</span>
+            <span className="tech-item">Vite</span>
+            <span className="tech-item">Node.js</span>
+            <span className="tech-item">Express.js</span>
+            <span className="tech-item">REST API</span>
+            <span className="tech-item">CSS</span>
           </div>
 
-          <div className="project-card">
-            <div className="glass-card">
-              <h4 className="card-title">Key Features</h4>
-              <ul className="card-text">
-                <li>Immutable audit trail for each vote</li>
-                <li>End-to-end encryption and anonymity</li>
-                <li>Cryptographic verification of results</li>
-                <li>Transparent yet privacy-preserving design</li>
-              </ul>
-            </div>
-            <div>
-              <div className="project-number">02</div>
-              <h3 className="project-title">Civic Chain</h3>
-              <div className="project-subtitle">Transparent Voting System</div>
-              <p className="project-description">
-                Blockchain-based voting platform that ensures electoral
-                integrity through cryptographic verification while preserving
-                voter anonymity. Reimagining democratic participation for the
-                digital age.
-              </p>
-              <div className="tech-stack">
-                <span className="tech-item">Blockchain</span>
-                <span className="tech-item">Node.js</span>
-                <span className="tech-item">PostgreSQL</span>
-                <span className="tech-item">Cryptography</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div>
-              <div className="project-number">03</div>
-              <h3 className="project-title">Fragments Microservice</h3>
-              <div className="project-subtitle">Cloud-Native API</div>
-              <p className="project-description">
-                Production-grade microservice architecture demonstrating
-                enterprise-level deployment patterns. Containerized Node.js API
-                with authentication, tests, and deployment to cloud
-                infrastructure.
-              </p>
-              <div className="tech-stack">
-                <span className="tech-item">Node.js</span>
-                <span className="tech-item">Express.js</span>
-                <span className="tech-item">Docker</span>
-                <span className="tech-item">AWS (basic)</span>
-                <span className="tech-item">REST APIs</span>
-              </div>
-            </div>
-            <div className="glass-card">
-              <h4 className="card-title">Technical Highlights</h4>
-              <ul className="card-text">
-                <li>Docker-based containerization</li>
-                <li>Health checks and observability</li>
-                <li>Automated testing & CI foundations</li>
-                <li>Cloud-ready configuration</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="glass-card">
-              <h4 className="card-title">Features</h4>
-              <ul className="card-text">
-                <li>Interactive dynamic menu</li>
-                <li>Real-time cart updates</li>
-                <li>Mobile-first responsive layout</li>
-                <li>Clean, accessible UI</li>
-              </ul>
-            </div>
-            <div>
-              <div className="project-number">04</div>
-              <h3 className="project-title">Local Pizza Shop</h3>
-              <div className="project-subtitle">E-Commerce Frontend</div>
-              <p className="project-description">
-                Restaurant website with real-time cart functionality and modern
-                responsive design. Demonstrates front-end development skills,
-                UX thinking, and component-based layout structure.
-              </p>
-              <div className="tech-stack">
-                <span className="tech-item">HTML5</span>
-                <span className="tech-item">CSS3</span>
-                <span className="tech-item">JavaScript</span>
-                <span className="tech-item">Responsive Design</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div>
-              <div className="project-number">05</div>
-              <h3 className="project-title">LacedUp</h3>
-              <div className="project-subtitle">Sneaker Marketplace</div>
-              <p className="project-description">
-                Full-stack marketplace concept showcasing authentication,
-                product management, and modern e-commerce flows. Built to mirror
-                real-world marketplace behavior and UX.
-              </p>
-              <div className="tech-stack">
-                <span className="tech-item">React.js</span>
-                <span className="tech-item">Node.js</span>
-                <span className="tech-item">Express.js</span>
-                <span className="tech-item">MySQL</span>
-                <span className="tech-item">JWT Auth</span>
-              </div>
-            </div>
-            <div className="glass-card">
-              <h4 className="card-title">Core Functionality</h4>
-              <ul className="card-text">
-                <li>Secure user authentication</li>
-                <li>Full CRUD for products</li>
-                <li>Search & filter experience</li>
-                <li>Responsive product gallery</li>
-              </ul>
-            </div>
+          <div style={{ marginTop: "1rem" }}>
+            <span className="contact-link" style={{ marginRight: "1rem" }}>
+              Live Demo →
+            </span>
+            <a
+              href="https://github.com/Hackman00/Transparent-Voting-System"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-link"
+            >
+              GitHub Repo
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </a>
+
+    {/* ========================= PROJECT 03 ========================= */}
+    <div className="project-card">
+      <div>
+        <div className="project-number">03</div>
+        <h3 className="project-title">Fragments Microservice</h3>
+        <div className="project-subtitle">Cloud-Native API</div>
+        <p className="project-description">
+          Production-grade microservice architecture demonstrating enterprise-level
+          cloud deployment patterns. Containerized Node.js API with authentication,
+          test coverage, and cloud-ready configuration.
+        </p>
+        <div className="tech-stack">
+          <span className="tech-item">Node.js</span>
+          <span className="tech-item">Express.js</span>
+          <span className="tech-item">Docker</span>
+          <span className="tech-item">AWS</span>
+          <span className="tech-item">REST APIs</span>
+        </div>
+      </div>
+      <div className="glass-card">
+        <h4 className="card-title">Technical Highlights</h4>
+        <ul className="card-text">
+          <li>Docker-based containerization</li>
+          <li>Health checks and metrics</li>
+          <li>Automated testing foundations</li>
+          <li>Cloud-ready CI/CD structure</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* ========================= PROJECT 04 ========================= */}
+    <div className="project-card">
+      <div className="glass-card">
+        <h4 className="card-title">Features</h4>
+        <ul className="card-text">
+          <li>Interactive dynamic menu</li>
+          <li>Real-time cart updates</li>
+          <li>Mobile-first responsive layout</li>
+          <li>Clean, accessible UI</li>
+        </ul>
+      </div>
+      <div>
+        <div className="project-number">04</div>
+        <h3 className="project-title">Local Pizza Shop</h3>
+        <div className="project-subtitle">E-Commerce Frontend</div>
+        <p className="project-description">
+          Restaurant website with real-time cart functionality and a modern
+          responsive design. Demonstrates front-end development, UX patterns,
+          and clean component architecture.
+        </p>
+        <div className="tech-stack">
+          <span className="tech-item">HTML5</span>
+          <span className="tech-item">CSS3</span>
+          <span className="tech-item">JavaScript</span>
+          <span className="tech-item">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+
+    {/* ========================= PROJECT 05 ========================= */}
+    <div className="project-card">
+      <div>
+        <div className="project-number">05</div>
+        <h3 className="project-title">LacedUp</h3>
+        <div className="project-subtitle">Sneaker Marketplace</div>
+        <p className="project-description">
+          Full-stack marketplace concept with authentication, product management,
+          and modern e-commerce flows. Designed to mimic real-world marketplace UX.
+        </p>
+        <div className="tech-stack">
+          <span className="tech-item">React.js</span>
+          <span className="tech-item">Node.js</span>
+          <span className="tech-item">Express.js</span>
+          <span className="tech-item">MySQL</span>
+          <span className="tech-item">JWT Auth</span>
+        </div>
+      </div>
+      <div className="glass-card">
+        <h4 className="card-title">Core Functionality</h4>
+        <ul className="card-text">
+          <li>Secure user authentication</li>
+          <li>Full CRUD for products</li>
+          <li>Search & filter experience</li>
+          <li>Responsive product gallery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section id="coming-soon">
         <h2 className="section-header">Next builds</h2>
